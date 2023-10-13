@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT" >
+        	<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <JSONLayout compact="true" eventEol="true" properties="true" stacktraceAsString="true" />
+        </Console>
+        <Console name="AuditTrail" target="SYSTEM_OUT" >
+        	<ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            <JSONLayout compact="true" eventEol="true" properties="true" stacktraceAsString="true" >
+                <KeyValuePair key="scope" value="audit-trail"/>
+            </JSONLayout>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="ALL">
+            <AppenderRef ref="Console"/>
+        </Root>
+        <Logger name="AuditTrail" level="info">
+            <AppenderRef ref="AuditTrail">
+                <MarkerFilter marker="AuditTrail" onMatch="ACCEPT" onMismatch="DENY"/>
+            </AppenderRef>
+        </Logger>
+    </Loggers>
+</Configuration>

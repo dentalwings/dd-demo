@@ -1,0 +1,5 @@
+management:
+  datadog:
+    metrics:
+      export:
+        api-key: secret
