@@ -17,9 +17,10 @@ docker run  `
   -e DD_SERVICE='dddemo' `
   -e DD_HOSTNAME='localdev' `
   -p 8080:8080 `
+  acrgcaccspipeline01.azurecr.io/dentalwings.dddemo:latest
 ```
 
-orm run on Azure Web App with:
+or run on Azure Web App with:
 
 `az webapp config container set --docker-custom-image-name acrgcaccspipeline01.azurecr.io/dentalwings.dddemo:latest --name awa-l-dddemo-cac-01 --resource-group arg-l-dddemo-cac-01`
 
@@ -35,7 +36,7 @@ azure endpoint:
 
 `curl http://awa-l-dddemo-cac-01.azurewebsites.net/`
 
-and navigate to this dtadog URL.
+and navigate to [this datadog URL](https://app.datadoghq.com/logs?query=service%3Adddemo&cols=host%2Cservice&index=%2A&messageDisplay=inline&refresh_mode=sliding&stream_sort=desc&viz=stream&from_ts=1698251978896&to_ts=1698252878896&live=true).
 
 We expect an equal number of:
 
