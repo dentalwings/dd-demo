@@ -36,7 +36,7 @@ azure endpoint:
 
 `curl http://awa-l-dddemo-cac-01.azurewebsites.net/`
 
-and navigate to [this datadog URL](https://app.datadoghq.com/logs?query=service%3Adddemo&cols=host%2Cservice&index=%2A&messageDisplay=inline&refresh_mode=sliding&stream_sort=desc&viz=stream&from_ts=1698251978896&to_ts=1698252878896&live=true).
+and navigate to [this Datadog URL](https://app.datadoghq.com/logs?query=service%3Adddemo&cols=host%2Cservice&index=%2A&messageDisplay=inline&refresh_mode=sliding&stream_sort=desc&viz=stream&from_ts=1698251978896&to_ts=1698252878896&live=true).
 
 We expect an equal number of:
 
