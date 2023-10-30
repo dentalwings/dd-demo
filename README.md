@@ -45,3 +45,4 @@ and
 `1332 Second line of log`
 
 This is an important change
+And a second one
