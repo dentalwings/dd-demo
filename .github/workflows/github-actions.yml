@@ -5,3 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is a test"
+  deployment:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - run: echo "Deployed to test"
