@@ -43,3 +43,6 @@ We expect an equal number of:
 `1332 First line of log`
 and
 `1332 Second line of log`
+
+This is an important change
+And a second one
