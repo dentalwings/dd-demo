@@ -6,9 +6,3 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "This is a test"
-  deployment:
-    runs-on: ubuntu-latest
-    environment: test
-    name: deploy version 0.1-${{ github.run_number }}
-    steps:
-      - run: echo "Deployed to test"

@@ -1,0 +1,9 @@
+name: GitHub Actions Test Deployment
+run-name: deploy 0.1-${{ github.run_number }}
+on: [push]
+jobs:
+  deployment:
+    runs-on: ubuntu-latest
+    environment: test
+    steps:
+      - run: echo "Deployed to test"
