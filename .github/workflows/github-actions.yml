@@ -1,5 +1,5 @@
 name: GitHub Actions Test
-run-name: 0.1-{{ github.run_number }}
+run-name: 0.1-${{ github.run_number }}
 on: [push]
 jobs:
   Explore-GitHub-Actions:
