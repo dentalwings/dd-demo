@@ -15,9 +15,9 @@ public class AuditTrailController {
 
 	@GetMapping("/trail")
 	public String index() {
-        logger.info(autditMarker, "call to /trail added to the audit trail");
-        logger.info("/trail called !");
-	return "Hello from /trail !";
+        	logger.info(autditMarker, "call to /trail added to the audit trail");
+        	logger.info("/trail called !");
+		return "Hello from /trail !";
 	}
 
 }
